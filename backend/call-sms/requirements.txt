@@ -1,0 +1,30 @@
+# ── PyTorch (CPU only, Cloud Run용) ──
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchaudio
+
+# ── AI / NLP ──
+speechbrain>=1.0.0
+keybert
+sentence-transformers
+huggingface-hub<0.27.0
+
+# ── Google Cloud / Firebase ──
+firebase-admin
+google-genai
+google-cloud-aiplatform
+google-cloud-storage
+google-cloud-firestore
+
+# ── Web Framework ──
+fastapi
+uvicorn[standard]
+python-multipart
+requests
+aiohttp
+
+# ── Audio / Crypto / Etc ──
+pydub
+soundfile
+cryptography
+python-dotenv

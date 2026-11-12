@@ -1,0 +1,9 @@
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+google-genai>=0.3.0
+firebase-admin>=6.4.0
+openai-whisper
+cryptography>=42.0.0
+numpy
+python-multipart
+requests

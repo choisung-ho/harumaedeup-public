@@ -1,0 +1,110 @@
+name: my_first_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.10.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # [기본 유틸리티]
+  intl: ^0.20.2
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+  url_launcher: ^6.3.0
+  http: ^1.2.0
+
+  # [로컬 데이터베이스 - Hive]
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # [UI 및 차트]
+  table_calendar: ^3.2.0
+  fl_chart: ^1.1.1
+  cached_network_image: ^3.3.1
+  google_fonts: ^6.1.0
+
+  # [장치 및 권한 설정]
+  image_picker: ^1.2.1
+  permission_handler: ^11.3.1
+  device_info_plus: ^10.1.2
+  battery_plus: ^7.0.0
+
+  # [카메라 및 녹음]
+  camera: ^0.10.5+9
+  record: ^6.0.0
+
+  # [지도 및 위치 서비스]
+  flutter_naver_map: ^1.4.2
+  geolocator: ^13.0.0
+  geocoding: ^3.0.0
+  kpostal: ^1.1.0
+
+  # [백그라운드 및 알림]
+  flutter_background_service: ^5.0.5
+  workmanager: ^0.9.0
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+  flutter_timezone: ^3.0.0
+
+  # [음성 인식 및 멀티미디어]
+  speech_to_text: ^7.3.0
+  flutter_tts: ^3.8.5
+  # 로컬 포크 버전 사용
+  sound_stream:
+    path: packages/sound_stream
+  audio_session: ^0.1.21
+  video_player: ^2.10.1
+  just_audio: ^0.9.36
+
+  # [파이어베이스 인프라]
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  google_sign_in: ^6.2.1
+  firebase_storage: ^12.4.10
+  cloud_firestore: ^5.4.4
+  cloud_functions: ^5.6.2
+  firebase_messaging: ^15.1.3
+
+  # [인증 및 네트워크 유틸]
+  file_picker: ^8.0.0
+  googleapis_auth: ^2.0.0
+  web_socket_channel: ^3.0.0
+  pointycastle: ^4.0.0
+  flutter_dotenv: ^6.0.0
+  crypto: ^3.0.7
+  porcupine_flutter: ^4.0.0
+  android_intent_plus: ^5.1.0
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  build_runner: ^2.4.8
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/icon/
+    - .env
+
+  fonts:
+    - family: PyeongtaekSemiconductor
+      fonts:
+        - asset: assets/fonts/PyeongtaekSemiconductor.ttf
+
+# 앱 아이콘 설정
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
